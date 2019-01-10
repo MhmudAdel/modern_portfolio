@@ -7,6 +7,7 @@
   cursor: pointer;
   @include easeOut;
 
+
   .btn-line {
     width: 28px;
     height: 3px;
@@ -38,7 +39,6 @@
     }
   }
 }
-
 
 // Menu Overlay
 .menu {
@@ -78,7 +78,7 @@
     }
   }
 
-  // Branding Side 
+  // Branding Side
   &-branding {
     background: $primary-color;
     transform: translate3d(0, 100%, 0);
@@ -92,7 +92,7 @@
     .portrait {
       width: 250px;
       height: 250px;
-      background: url('../img/portrait.jpg');
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
       border: solid 3px $secondary-color;
     }
@@ -109,7 +109,6 @@
 
     &.current>a {
       color: $secondary-color;
-
     }
   }
 
@@ -127,10 +126,11 @@
     &:hover {
       color: $secondary-color;
     }
+
   }
 }
 
-// Delay each nav item slide by 0.1s
+// Delay each nav item slide bt 0.1s
 @for $x from 1 through 4 {
   .nav-item:nth-child(#{$x}) {
     transition-delay: $x * 0.1s;
